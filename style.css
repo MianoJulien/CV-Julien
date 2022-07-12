@@ -7,14 +7,21 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.cv {
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 95%;
+}
+
 header {
   background: rgba(0, 0, 0, 0.893);
   border-radius: 10px;
   color: white;
   height: 200px;
-  width: 95%;
+  width: 100%;
   display: grid;
-  margin: 10px auto;
+
   grid-template-columns: 75% 25%;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "h1 photo" "ul photo";
@@ -27,7 +34,7 @@ h1 {
   grid-area: h1;
 }
 
-ul {
+ul.list-header {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -47,6 +54,55 @@ img {
   grid-area: photo;
   margin: auto;
   padding: 5px;
+}
+
+.cv-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "pro we2"
+    "ski we2"
+    "we edu";
+}
+
+h2 {
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+h3 {
+  margin-left: 20px;
+}
+
+p {
+  text-align: justify;
+  padding: 10px;
+}
+
+ul.list-body {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.profile {
+  grid-area: pro;
+}
+
+.skills {
+  grid-area: ski;
+}
+
+.work-experience {
+  grid-area: we;
+}
+.work-experience2 {
+  grid-area: we2;
+}
+
+.education {
+  grid-area: edu;
 }
 
 @media screen and (max-width: 817px) {
