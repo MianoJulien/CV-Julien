@@ -21,7 +21,6 @@ header {
   height: 200px;
   width: 100%;
   display: grid;
-
   grid-template-columns: 75% 25%;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "h1 photo" "ul photo";
@@ -92,6 +91,50 @@ ul.list-body {
 
 .skills {
   grid-area: ski;
+}
+.technical-skills {
+  position: relative;
+}
+
+#html::after {
+  position: absolute;
+  content: "";
+  background: black;
+  height: 15px;
+  width: 200px;
+  top: 35px;
+  left: 130px;
+  border-radius: 150px;
+}
+#css::after {
+  position: absolute;
+  content: "";
+  background: black;
+  height: 15px;
+  width: 150px;
+  top: 75px;
+  left: 130px;
+  border-radius: 150px;
+}
+#javascript::after {
+  position: absolute;
+  content: "";
+  background: black;
+  height: 15px;
+  width: 80px;
+  top: 115px;
+  left: 130px;
+  border-radius: 150px;
+}
+#github::after {
+  position: absolute;
+  content: "";
+  background: black;
+  height: 15px;
+  width: 150px;
+  top: 155px;
+  left: 130px;
+  border-radius: 150px;
 }
 
 .work-experience {
