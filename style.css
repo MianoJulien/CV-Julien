@@ -99,7 +99,8 @@ ul.list-body {
 #html::after {
   position: absolute;
   content: "";
-  background: black;
+  background: linear-gradient(90deg, black 100%, white 0%);
+  border: 2px solid black;
   height: 15px;
   width: 200px;
   top: 35px;
@@ -109,9 +110,10 @@ ul.list-body {
 #css::after {
   position: absolute;
   content: "";
-  background: black;
+  background: linear-gradient(90deg, black 80%, white 20%);
+  border: 2px solid black;
   height: 15px;
-  width: 150px;
+  width: 200px;
   top: 75px;
   left: 130px;
   border-radius: 150px;
@@ -119,9 +121,10 @@ ul.list-body {
 #javascript::after {
   position: absolute;
   content: "";
-  background: black;
+  background: linear-gradient(90deg, black 50%, white 50%);
+  border: 2px solid black;
   height: 15px;
-  width: 80px;
+  width: 200px;
   top: 115px;
   left: 130px;
   border-radius: 150px;
@@ -129,9 +132,10 @@ ul.list-body {
 #github::after {
   position: absolute;
   content: "";
-  background: black;
+  background: linear-gradient(90deg, black 80%, white 20%);
+  border: 2px solid black;
   height: 15px;
-  width: 150px;
+  width: 200px;
   top: 155px;
   left: 130px;
   border-radius: 150px;
