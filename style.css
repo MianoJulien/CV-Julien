@@ -8,8 +8,8 @@ body {
 }
 
 .cv {
-  border: 3px solid black;
-  border-radius: 10px;
+  /* border: 3px solid black;
+  border-radius: 10px; */
   margin: 10px auto;
   width: 95%;
 }
@@ -18,7 +18,9 @@ header {
   background: rgba(0, 0, 0, 0.893);
   border-radius: 10px;
   color: white;
-  height: 200px;
+  min-height: 300px;
+  max-height: 400px;
+  height: 40%;
   width: 100%;
   display: grid;
   grid-template-columns: 75% 25%;
@@ -158,13 +160,13 @@ ul.list-body {
     margin: 10px;
   }
 
-  header {
-    height: 400px;
+  .cv-body {
+    display: block;
   }
 }
 
 @media screen and (max-width: 575px) {
-  img {
-    visibility: hidden;
+  header {
+    display: block;
   }
 }
